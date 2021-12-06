@@ -27,7 +27,7 @@ function App() {
         setData({...data})
     }
     const borrardelCarro = (x) => {
-        
+        // eslint-disable-next-line no-restricted-globals
         const r = confirm(`Eliminar ${x.nombre}?`)
         if(r === true){
             data.carrito.splice(data.carrito.indexOf(x),1)
